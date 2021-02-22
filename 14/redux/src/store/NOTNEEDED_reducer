@@ -1,0 +1,77 @@
+import * as actionTypes from './actions';
+
+const initialState = {
+    counter: 0,
+    results: []
+};
+
+const reducer = (state = initialState, action) => {
+    switch (action.type) {
+        case actionTypes.INCREMENT:
+            /*             return {
+                            counter: state.counter + 1
+                        }; */
+
+            // Approache 1:
+            /*                 const newState = Object.assign({}, state);
+                            newState.counter = state.counter + 1;
+                            return newState; */
+
+            // Approache 2:
+            return {
+                ...state,
+                counter: state.counter + 1
+            };
+        case actionTypes.DECREMENT:
+/*             return {
+                counter: state.counter - 1
+            }; */
+            return {
+                ...state,
+                counter: state.counter - 1
+            };
+        case actionTypes.ADD:
+            return {
+                ...state,
+                counter: state.counter + action.value
+            };
+        case actionTypes.SUBTRACT:
+            return {
+                ...state,
+                counter: state.counter - action.value
+            };
+        case actionTypes.STORE_RESULT:
+            return {
+                ...state,
+                results: state.results.concat({
+                    id: new Date(),
+                    value: state.counter
+                })
+            };
+            case actionTypes.DELETE_RESULT:
+            //Appropach 1:
+/*             const id = 2;
+            const newArray = [...state.results];
+            newArray.splice(id, 1);
+
+            return {
+                ...state,
+                results: newArray
+            }; */
+
+            //Appropach 2:
+            const updatedArray = state.results.filter(result => {
+                return result.id !== action.id;
+            });
+
+            return {
+                ...state,
+                results: updatedArray
+            };
+        default:
+            break;
+    }
+    return state;
+};
+
+export default reducer;

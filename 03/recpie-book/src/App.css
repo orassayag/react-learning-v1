@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.add-recpie {
+  width: 60%;
+  margin: 16px auto;
+  border: 1px solid #eec334;
+  box-shadow: 0px 2px 3px #ccc;
+  padding: 20px;
+}

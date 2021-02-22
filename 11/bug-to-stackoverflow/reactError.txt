@@ -1,0 +1,8 @@
+Warning: Can only update a mounted or mounting component. This usually means you called setState, replaceState, or forceUpdate on an unmounted component. This is a no-op.
+
+Please check the code for the Posts component.
+
+https://stackoverflow.com/questions/34544314/setstate-can-only-update-a-mounted-or-mounting-component-this-usually-mea
+
+My question:
+https://stackoverflow.com/questions/51591743/react-warning-can-only-update-a-mounted-or-mounting-component

@@ -1,0 +1,5 @@
+{
+    "eslint.enable": true,
+    "eslint.trace.server": "messages",
+    "eslint.options": { "configFile": "C:/Or/Web/ReactLearning/24/animations/.eslintrc.json" }
+}

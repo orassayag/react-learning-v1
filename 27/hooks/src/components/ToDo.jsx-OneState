@@ -1,0 +1,36 @@
+import React, { useState, Fragment } from 'react';
+
+const ToDo = (props) => {
+    const [toDoState, setToDoState] = useState({
+        userInput: '',
+        toDoList: []
+    });
+
+    const handleInputChange = (e) => {
+        setToDoState({
+            userInput: e.target.value,
+            toDoList: toDoState.toDoList
+        });
+    };
+
+    const handleToDoAdd = (e) => {
+        setToDoState({
+            userInput: toDoState.toDoList,
+            toDoList: toDoState.toDoList.concat(toDoState.userInput)
+        });
+    };
+
+    return (
+        <Fragment>
+            <input type="text" placeholder="ToDo" onChange={handleInputChange} value={toDoState.userInput} />
+            <button type="button" onClick={handleToDoAdd}>Add</button>
+            <ul>
+                {toDoState.toDoList.map((toDo, i) => {
+                    return (<li key={i}>{toDo}</li>);
+                })}
+            </ul>
+        </Fragment>
+    );
+};
+
+export default ToDo;

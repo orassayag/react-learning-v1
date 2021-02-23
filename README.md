@@ -8,6 +8,7 @@ Clone the application to your computer.
 Steps to view the solution:
 1. Open server application on IDE (I use VSCode).
 2. Terminal: npm i
+3. In terminal: npm start
 
 Happy testing! :)
 

@@ -31,5 +31,4 @@ const post = (props) => {
     );
 };
 
-
 export default withRouter(post); */

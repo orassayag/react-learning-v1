@@ -401,7 +401,6 @@ export default Button; // Don’t forget to use export default!
 
 ### `DangerButton.js`
 
-
 ```js
 import React, { Component } from 'react';
 import Button from './Button'; // Import a component from another file

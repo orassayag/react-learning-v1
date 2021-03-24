@@ -89,7 +89,6 @@ class App extends Component {
 
 export default App;
 
-
 /* {
   this.state.showPersons ?
     <div>

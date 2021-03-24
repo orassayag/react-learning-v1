@@ -69,7 +69,6 @@ const todo = props => {
 
   const todoAddHandler = () => {
 
-
     axios
       .post('https://test-68750.firebaseio.com/todos.json', { name: todoInput.value })
       .then(res => {

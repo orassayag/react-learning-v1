@@ -6,7 +6,7 @@ const Auth = props => {
     const auth = useContext(AuthContext);
 
     return (
-        <button onClick={auth.login}>Log in!</button>
+        <button onClick={auth.login}>Login!</button>
     );
 };
 

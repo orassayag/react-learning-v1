@@ -15,13 +15,13 @@ class App extends Component {
       {
         title: 'Pasta napolitana',
         description: 'Pasta napolitana Pasta napolitana Pasta napolitana Pasta napolitana Pasta napolitana Pasta napolitana',
-        ingrediencies: ['3 hot water', '1 black peper', '2 peperoni cheese'],
+        ingrediencies: ['3 hot water', '1 black pepper', '2 pepperoni cheese'],
         likesCount: 0
       },
       {
         title: 'Double hamburger',
         description: 'Double hamburger Double hamburger Double hamburger Double hamburger Double hamburger Double hamburger',
-        ingrediencies: ['1 meat stake', '1 lyes of hasa', '1 onuion'],
+        ingrediencies: ['1 meat stake', '1 lyes of hasa', '1 onion'],
         likesCount: 0
       },
     ]

@@ -1,7 +1,12 @@
 {
     "name": "next-js",
     "version": "1.0.0",
+    "private": false,
     "description": "",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/orassayag/react-learning.git"
+    },
     "main": "index.js",
     "scripts": {
         "dev": "next",

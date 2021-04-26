@@ -1,7 +1,12 @@
 {
   "name": "webpack-example",
   "version": "1.0.0",
+  "private": false,
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/react-learning.git"
+  },
   "main": "test.js",
   "scripts": {
     "start": "webpack-dev-server",

@@ -1,7 +1,11 @@
 {
   "name": "hooks",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/react-learning.git"
+  },
   "dependencies": {
     "react": "16.8.0-alpha.1",
     "react-dom": "16.8.0-alpha.1",

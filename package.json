@@ -1,0 +1,44 @@
+{
+  "name": "react-learning-v1",
+  "version": "1.0.0",
+  "description": "A comprehensive React learning repository containing progressive examples and projects from the React Complete Guide course, covering fundamentals to advanced concepts including Hooks, Router, and Redux",
+  "keywords": [
+    "react",
+    "learning",
+    "tutorial",
+    "examples",
+    "react-router",
+    "redux",
+    "hooks",
+    "burger-builder",
+    "course",
+    "javascript",
+    "jsx",
+    "components",
+    "state-management",
+    "routing",
+    "education"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orassayag/react-learning-v1.git"
+  },
+  "author": {
+    "name": "Or Assayag",
+    "email": "orassayag@gmail.com",
+    "url": "https://github.com/orassayag"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orassayag/react-learning-v1/issues"
+  },
+  "homepage": "https://github.com/orassayag/react-learning-v1#readme",
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "info": "echo 'This is a learning repository with multiple independent React projects. Navigate to any numbered folder (e.g., cd 03/react-complete-guide) and run npm install && npm start'"
+  },
+  "private": false
+}

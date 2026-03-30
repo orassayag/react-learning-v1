@@ -2454,4 +2454,4 @@ If you have ideas for more “How To” recipes that should be on this page, [le
 
 ## License
 
-This application has an UNLICENSED License.
+This application has an UNLICENSED license.

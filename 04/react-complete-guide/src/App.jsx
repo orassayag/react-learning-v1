@@ -7,10 +7,10 @@ class App extends Component {
     persons: [
       { id: 'sdfss', name: 'Max', age: 28 },
       { id: 'ger4r', name: 'Manu', age: 29 },
-      { id: 'ger5456r', name: 'Stephanie', age: 26 }
+      { id: 'ger5456r', name: 'Stephanie', age: 26 },
     ],
     otherValue: 'some other value',
-    showPersons: false
+    showPersons: false,
   };
 
   deletePersonHandler = (personIndex) => {
@@ -52,7 +52,7 @@ class App extends Component {
       font: 'inherit',
       border: '1px solid #0000ff',
       padding: '8px',
-      cursor: 'pointer'
+      cursor: 'pointer',
     };
 
     let persons = null;
@@ -66,7 +66,8 @@ class App extends Component {
                 age={el.age}
                 key={el.id}
                 click={this.deletePersonHandler.bind(this, i)}
-                changed={(e) => this.nameChangedHandler(e, el.id)} />
+                changed={(e) => this.nameChangedHandler(e, el.id)}
+              />
             );
           })}
         </div>
@@ -74,12 +75,12 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
+      <div className='App'>
         <h1>Hi, I'm a React App</h1>
         <p>This is really working!</p>
-        <button
-          style={style}
-          onClick={this.togglePersonsHandler}>Toggle Persons</button>
+        <button style={style} onClick={this.togglePersonsHandler}>
+          Toggle Persons
+        </button>
         {persons}
       </div>
     );

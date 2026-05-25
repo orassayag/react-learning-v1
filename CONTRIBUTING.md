@@ -9,6 +9,7 @@ Everyone is welcome to contribute to this project. Contributing doesn't just mea
 ### Reporting Issues
 
 If you find a bug or have a feature request:
+
 1. Check if the issue already exists in the [GitHub Issues](https://github.com/orassayag/react-learning-v1/issues)
 2. If not, create a new issue with:
    - Clear title and description
@@ -31,11 +32,13 @@ If you find a bug or have a feature request:
 ### Code Style Guidelines
 
 This project uses:
+
 - **React** with JSX
 - **JavaScript ES6+** syntax
 - **npm** for package management
 
 Before submitting:
+
 ```bash
 # Install dependencies
 npm install
@@ -59,6 +62,7 @@ npm run build
 ### Adding New Examples
 
 When adding new learning examples:
+
 1. Create a new numbered folder or add to existing ones
 2. Include a README.md explaining the concept being demonstrated
 3. Keep examples focused on specific React concepts
@@ -68,6 +72,7 @@ When adding new learning examples:
 ### Project Structure
 
 Each numbered folder represents a learning stage:
+
 - Early folders (03-10): Basic React concepts
 - Middle folders (11-20): Intermediate features (routing, HTTP, Redux)
 - Later folders (21-27): Advanced topics (Redux middleware, Hooks)
@@ -76,9 +81,9 @@ Each numbered folder represents a learning stage:
 
 Please feel free to contact me with any question, comment, pull-request, issue, or any other thing you have in mind.
 
-* Or Assayag <orassayag@gmail.com>
-* GitHub: https://github.com/orassayag
-* StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
-* LinkedIn: https://linkedin.com/in/orassayag
+- Or Assayag <orassayag@gmail.com>
+- GitHub: https://github.com/orassayag
+- StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
+- LinkedIn: https://linkedin.com/in/orassayag
 
 Thank you for contributing! 🙏

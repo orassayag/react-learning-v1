@@ -8,10 +8,10 @@ class App extends Component {
     persons: [
       { id: 'sdfss', name: 'Max', age: 28 },
       { id: 'ger4r', name: 'Manu', age: 29 },
-      { id: 'ger5456r', name: 'Stephanie', age: 26 }
+      { id: 'ger5456r', name: 'Stephanie', age: 26 },
     ],
     otherValue: 'some other value',
-    showPersons: false
+    showPersons: false,
   };
 
   deletePersonHandler = (personIndex) => {
@@ -61,7 +61,8 @@ class App extends Component {
                 age={el.age}
                 key={el.id}
                 click={this.deletePersonHandler.bind(this, i)}
-                changed={(e) => this.nameChangedHandler(e, el.id)} />
+                changed={(e) => this.nameChangedHandler(e, el.id)}
+              />
             );
           })}
         </div>
@@ -82,9 +83,9 @@ class App extends Component {
       <div className={classes.App}>
         <h1>Hi, I'm a React App</h1>
         <p className={assignedClasses.join(' ')}>This is really working!</p>
-        <button
-          className={btnClass}
-          onClick={this.togglePersonsHandler}>Toggle Persons</button>
+        <button className={btnClass} onClick={this.togglePersonsHandler}>
+          Toggle Persons
+        </button>
         {persons}
       </div>
     );

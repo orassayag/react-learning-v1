@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import classes from './App.css';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
-import withClass from '../hoc/withClass'
+import withClass from '../hoc/withClass';
 import Aux from '../hoc/Aux';
 /* import WithClass from '../hoc/WithClass'; */
 /* import ErrorBoundary from './ErrorBoundary/ErrorBoundary'; */
@@ -18,12 +18,12 @@ class App extends PureComponent {
       persons: [
         { id: 'sdfss', name: 'Max', age: 28 },
         { id: 'ger4r', name: 'Manu', age: 29 },
-        { id: 'ger5456r', name: 'Stephanie', age: 26 }
+        { id: 'ger5456r', name: 'Stephanie', age: 26 },
       ],
       otherValue: 'some other value',
       showPersons: false,
       toggleClicked: 0,
-      authenticated: false
+      authenticated: false,
     };
   }
 
@@ -43,11 +43,19 @@ class App extends PureComponent {
     } */
 
   componentWillUpdate(nextProps, nextState) {
-    console.log('[UPDATE App.js] Inside componentWillUpdate()', nextProps, nextState);
+    console.log(
+      '[UPDATE App.js] Inside componentWillUpdate()',
+      nextProps,
+      nextState
+    );
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    console.log('[UPDATE App.js] Inside getDerivedStateFromProps()', nextProps, prevState);
+    console.log(
+      '[UPDATE App.js] Inside getDerivedStateFromProps()',
+      nextProps,
+      prevState
+    );
     return prevState;
   }
 
@@ -113,35 +121,45 @@ class App extends PureComponent {
     this.setState((prevState, props) => {
       return {
         showPersons: !doesShow,
-        toggleClicked: prevState.toggleClicked + 1
-      }
+        toggleClicked: prevState.toggleClicked + 1,
+      };
     });
   };
 
   loginHandler = () => {
     this.setState({ authenticated: true });
-  }
+  };
 
   render() {
     console.log('[App.js] Inside render()');
     let persons = null;
 
     if (this.state.showPersons) {
-      persons = <Persons
-        persons={this.state.persons}
-        clicked={this.deletePersonHandler}
-        changed={this.nameChangedHandler} />
+      persons = (
+        <Persons
+          persons={this.state.persons}
+          clicked={this.deletePersonHandler}
+          changed={this.nameChangedHandler}
+        />
+      );
     }
 
     return (
       <Aux>
-        <button onClick={() => { this.setState({ showPersons: true }); }}>Show Persons</button>
+        <button
+          onClick={() => {
+            this.setState({ showPersons: true });
+          }}
+        >
+          Show Persons
+        </button>
         <Cockpit
           appTitle={this.props.title}
           persons={this.state.persons}
           login={this.loginHandler}
           showPersons={this.state.showPersons}
-          clicked={this.togglePersonsHandler} />
+          clicked={this.togglePersonsHandler}
+        />
         <AuthContext.Provider value={this.state.authenticated}>
           {persons}
         </AuthContext.Provider>

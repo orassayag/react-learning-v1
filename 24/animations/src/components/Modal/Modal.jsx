@@ -5,33 +5,36 @@ import CSSTransition from 'react-transition-group/CSSTransition';
 import './Modal.css';
 
 const animationTiming = {
-    enter: 400,
-    exit: 1000
+  enter: 400,
+  exit: 1000,
 };
 
 const modal = (props) => {
-    return (
-        <CSSTransition
-            mountOnEnter
-            unmountOnExit
-            in={props.show}
-            timeout={animationTiming}
-            classNames={{
-                enter: '',
-                enterActive: 'ModalOpen',
-                exit: '',
-                exitActive: 'ModalClosed',
-                apper: '',
-                apperActive: ''
-            }}>
-            <div className="Modal">
-                <h1>A Modal</h1>
-                <button className="Button" onClick={props.closed}>Dismiss</button>
-            </div>
-        </CSSTransition>
-    );
+  return (
+    <CSSTransition
+      mountOnEnter
+      unmountOnExit
+      in={props.show}
+      timeout={animationTiming}
+      classNames={{
+        enter: '',
+        enterActive: 'ModalOpen',
+        exit: '',
+        exitActive: 'ModalClosed',
+        apper: '',
+        apperActive: '',
+      }}
+    >
+      <div className='Modal'>
+        <h1>A Modal</h1>
+        <button className='Button' onClick={props.closed}>
+          Dismiss
+        </button>
+      </div>
+    </CSSTransition>
+  );
 
-    /*     return (
+  /*     return (
             <CSSTransition
                 mountOnEnter
                 unmountOnExit
@@ -45,10 +48,10 @@ const modal = (props) => {
             </CSSTransition>
         ); */
 
-    /*     const cssClasses = ['Modal', props.show ? 'ModalOpen' : 'ModalClosed']; */
-    /*     const cssClasses = ['Modal', props.show === 'entering' ? 'ModalOpen' : props.show === 'exiting' ? 'ModalClosed' : null]; */
+  /*     const cssClasses = ['Modal', props.show ? 'ModalOpen' : 'ModalClosed']; */
+  /*     const cssClasses = ['Modal', props.show === 'entering' ? 'ModalOpen' : props.show === 'exiting' ? 'ModalClosed' : null]; */
 
-    /*     return (
+  /*     return (
             <Transition
                 mountOnEnter
                 unmountOnExit

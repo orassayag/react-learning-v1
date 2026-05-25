@@ -1,24 +1,24 @@
 {
-    "name": "next-js",
-    "version": "1.0.0",
-    "private": false,
-    "description": "",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/orassayag/react-learning.git"
-    },
-    "main": "index.js",
-    "scripts": {
-        "dev": "next",
-        "build": "next build",
-        "start": "next start"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "next": "^4.1.0",
-        "react": "^16.4.2",
-        "react-dom": "^16.4.2"
-    }
+  "name": "next-js",
+  "version": "1.0.0",
+  "private": false,
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/react-learning.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^4.1.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
 }

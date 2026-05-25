@@ -7,9 +7,9 @@ import 'babel-polyfill';
 import App from './App';
 
 const app = (
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 ReactDom.render(app, document.getElementById('root'));

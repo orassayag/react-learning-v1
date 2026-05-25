@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import AuthContext from '../auth-context';
 
 class Login extends Component {
-
   static contextType = AuthContext;
 
   componentDidMount() {

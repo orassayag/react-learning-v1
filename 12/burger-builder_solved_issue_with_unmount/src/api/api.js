@@ -23,7 +23,7 @@ import axios from 'axios';
 
 const cancelToken = axios.CancelToken;
 const api = axios.create({
-    baseURL: 'https://burger-builder-84921.firebaseio.com/'
+  baseURL: 'https://burger-builder-84921.firebaseio.com/',
 });
 
 export { api, cancelToken };

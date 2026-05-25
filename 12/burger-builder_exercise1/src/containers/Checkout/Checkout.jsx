@@ -4,43 +4,43 @@ import CheckoutSummary from '../../components/Order/CheckoutSummary/CheckoutSumm
 import { Redirect } from 'react-router-dom';
 
 class Checkout extends Component {
-    state = {
-        orderId: null,
-        ingrediencies: null
+  state = {
+    orderId: null,
+    ingrediencies: null,
+  };
+
+  componentDidMount() {
+    const orderId = this.props.match.params.id;
+    if (orderId) {
+      this.setState({ orderId: orderId });
+      api
+        .get(`/orders/${orderId}.json`)
+        .then((response) => {
+          console.log(response);
+          if (response && response.data && response.data.ingrediencies) {
+            this.setState({ ingrediencies: response.data.ingrediencies });
+          }
+        })
+        .catch((error) => {
+          this.setState({ error: true });
+        });
+    }
+  }
+
+  render() {
+    let ingrediencies = null;
+    if (this.state.ingrediencies) {
+      ingrediencies = (
+        <CheckoutSummary ingrediencies={this.state.ingrediencies} />
+      );
     }
 
-    componentDidMount() {
-        const orderId = this.props.match.params.id;
-        if (orderId) {
-            this.setState({ orderId: orderId });
-            api.get(`/orders/${orderId}.json`)
-                .then(response => {
-                    console.log(response);
-                    if (response && response.data && response.data.ingrediencies) {
-                        this.setState({ ingrediencies: response.data.ingrediencies });
-                    }
-                }).catch(error => {
-                    this.setState({ error: true });
-                });
-        }
+    if (!this.props.match.params.id) {
+      ingrediencies = <Redirect to='/' />;
     }
 
-    render() {
-        let ingrediencies = null;
-        if (this.state.ingrediencies) {
-            ingrediencies = (<CheckoutSummary ingrediencies={this.state.ingrediencies} />);
-        }
-
-        if (!this.props.match.params.id) {
-            ingrediencies = (<Redirect to="/" />);
-        }
-
-        return (
-            <div>
-                {ingrediencies}
-            </div>
-        );
-    }
+    return <div>{ingrediencies}</div>;
+  }
 }
 
 export default Checkout;

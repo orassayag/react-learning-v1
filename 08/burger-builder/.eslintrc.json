@@ -1,27 +1,19 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "jest": true
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  }
 }

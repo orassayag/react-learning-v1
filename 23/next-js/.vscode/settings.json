@@ -1,5 +1,7 @@
 {
-    "eslint.enable": true,
-    "eslint.trace.server": "messages",
-    "eslint.options": { "configFile": "C:/Or/Web/ReactLearning/23/next-js/.eslintrc.json" }
+  "eslint.enable": true,
+  "eslint.trace.server": "messages",
+  "eslint.options": {
+    "configFile": "C:/Or/Web/ReactLearning/23/next-js/.eslintrc.json"
+  }
 }

@@ -6,13 +6,13 @@ import AuthContext from './auth-context';
 
 class App extends Component {
   state = {
-    isAuth: false
+    isAuth: false,
   };
 
   toggleAuth = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return {
-        isAuth: !prevState.isAuth
+        isAuth: !prevState.isAuth,
       };
     });
   };

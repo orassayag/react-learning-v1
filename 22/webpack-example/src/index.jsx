@@ -5,9 +5,9 @@ import './index.css';
 import App from './App';
 
 const app = (
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 ReactDom.render(app, document.getElementById('root'));
